@@ -3,7 +3,7 @@ version "1.0-SNAPSHOT"
 
 buildscript {
     dependencies {
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlin_version}"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath 'org.flywaydb:flyway-gradle-plugin:3.2.1'
     }
 }
@@ -18,7 +18,7 @@ sourceSets {
 }
 
 dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib:${kotlin_version}"
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 
     compile "org.springframework:spring-context:$spring_version"
     compile "org.springframework:spring-jdbc:$spring_version"
@@ -32,6 +32,7 @@ dependencies {
     compile group: 'org.eclipse.jetty', name: 'jetty-servlet', version: '9.3.0.M2'
 
     compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.10'
+    compile 'org.slf4j:slf4j-simple:1.7.21' 
 
     compile group: 'mysql', name: 'mysql-connector-java', version: '5.1.26'
 

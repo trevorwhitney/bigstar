@@ -3,16 +3,16 @@ subprojects {
 
     buildscript {
         repositories {
-            mavenCentral()
+            jcenter()
         }
     }
 
     repositories {
-        mavenCentral()
+        jcenter()
     }
 
     ext {
         spring_version = "4.1.8.RELEASE"
-        kotlin_version = '1.0.0-rc-1036'
+        kotlin_version = '1.0.4'
     }
 }
